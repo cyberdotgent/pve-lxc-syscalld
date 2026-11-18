@@ -1,3 +1,13 @@
+pve-lxc-syscalld (2.0.2+s390x1) trixie; urgency=medium
+
+  * s390x port: backport "sys quotactl: use libc types for better
+    portability" (f690815, c_char is unsigned on s390x).
+
+  * s390x port: syscall: add s390x syscall numbers (branch
+    s390x/syscall-table-master).
+
+ -- Yvan Janssens <yvanj@cyber.gent>  Wed, 18 Nov 2026 11:16:13 +0100
+
 pve-lxc-syscalld (2.0.2) trixie; urgency=medium
 
   * d/postinst: improve error handling to avoid breaking upgrade
