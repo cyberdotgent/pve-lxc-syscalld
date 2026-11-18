@@ -9,6 +9,7 @@ use crate::tools::vec;
 
 const AUDIT_ARCH_X86_64: u32 = 0xc000_003e;
 const AUDIT_ARCH_I386: u32 = 0x4000_0003;
+const AUDIT_ARCH_S390X: u32 = 0x8000_0016;
 
 pub enum SyscallStatus {
     Ok(i64),
@@ -46,6 +47,12 @@ const SYSCALL_TABLE: &[SyscallArch] = &[
         arch: AUDIT_ARCH_I386,
         mknod: 14,
         mknodat: 297,
+        quotactl: 131,
+    },
+    SyscallArch {
+        arch: AUDIT_ARCH_S390X,
+        mknod: 14,
+        mknodat: 290,
         quotactl: 131,
     },
 ];
