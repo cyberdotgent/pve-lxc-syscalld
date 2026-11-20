@@ -1,3 +1,9 @@
+pve-lxc-syscalld (2.0.2+s390x2) trixie; urgency=medium
+
+  * Rebuild with cleaned changelog and test data.
+
+ -- Yvan Janssens <yvanj@cyber.gent>  Fri, 20 Nov 2026 12:55:25 +0100
+
 pve-lxc-syscalld (2.0.2+s390x1) trixie; urgency=medium
 
   * s390x port: backport "sys quotactl: use libc types for better
